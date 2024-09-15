@@ -23,11 +23,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  if (
+    typeof window !== "undefined" &&
+    window.location.pathname.startsWith("/dashboards")
+  ) {
+    return <>{children}</>;
+  }
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>

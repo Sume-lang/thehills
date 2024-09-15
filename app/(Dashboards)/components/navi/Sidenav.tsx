@@ -1,7 +1,26 @@
 "use client";
+
+import { Layers } from "lucide-react";
+
 const Navitems = [
   {
     title: "Web Management",
+    items: [
+      {
+        name: "Pages",
+        icons: <Layers className="w-5 h-5" />,
+        child: [
+          {
+            name: "Add Pages",
+            url: "/",
+          },
+          {
+            name: "Edit Pages",
+            url: "/",
+          },
+        ],
+      },
+    ],
   },
   {
     title: "Revenues",
@@ -28,9 +47,17 @@ function Sidebar() {
       <section>
         {Navitems.map((i) => (
           <div key={i.title} className="flex flex-col">
-            <span className="hidden lg:block text-slate-900 font-bold my-10">
-              {i.title}
-            </span>
+            <div className="hidden lg:block text-slate-900 font-bold my-2">
+              <h1>{i.title}</h1>
+            </div>
+            {i.items?.map((j) => (
+              <div
+                key={j.name}
+                className="flex items-center gap-4 cursor-pointer hover:bg-slate-100 duration-300 ease-in-out p-2 rounded-md px-4">
+                {j.icons}
+                <h1>{j.name}</h1>
+              </div>
+            ))}
           </div>
         ))}
       </section>

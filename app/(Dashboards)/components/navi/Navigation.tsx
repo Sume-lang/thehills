@@ -1,3 +1,4 @@
+"use client";
 import { Search, CircleUserRound } from "lucide-react";
 
 export default function Navigation() {
