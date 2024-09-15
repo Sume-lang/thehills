@@ -92,15 +92,21 @@ export default function Activites() {
           <ScrollBar orientation="horizontal" />
         </ScrollArea>
       </section>
-      <section>
-        <h1 className="text-5xl font-extrabold">Activities</h1>
+      <section className="w-full h-full">
+        <h1 className="text-5xl font-extrabold uppercase">Activities</h1>
         <h1 className="font-extralight">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
           vero fugit recusandae, sunt neque in explicabo. Placeat porro
           consequuntur rem labore autem facere nam ullam minus ab, cupiditate
           quam reprehenderit.
         </h1>
-        <div></div>
+        <div className="flex flex-row p-2 h-[100%] gap-2">
+          <div className="flex flex-col p-2 shadow-md">
+            <h1 className="text-xl font-extralight uppercase">
+              Beaches Activities
+            </h1>
+          </div>
+        </div>
       </section>
     </main>
   );
