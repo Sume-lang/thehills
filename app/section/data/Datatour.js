@@ -1,6 +1,7 @@
 const DataTour = [
   {
     name: "Beaches",
+    pic: "/Assets/tbg/farmermode.png",
     qty: "50",
   },
   {

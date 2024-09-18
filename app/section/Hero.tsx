@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -15,15 +16,7 @@ export default function Home() {
   return (
     <main
       ref={ref}
-      className="w-full relative overflow-hidden bg-[url('/Assets/Images/Rinjani-Mointain-4.jpg')] bg-cover bg-center bg-no-repeat h-[700px]">
-      <motion.div
-        className="w-full h-full absolute top-0 left-0"
-        style={{ scaleX }}
-      />
-      <motion.div
-        className="w-full h-full absolute top-0 left-0"
-        style={{ opacity }}
-      />
+      className="w-full relative overflow-hidden bg-[url('/Assets/Images/Rinjani-Mointain-9.jpg')] bg-cover bg-center bg-no-repeat h-[700px]">
       <section className="w-full h-full flex flex-col items-start justify-center bg-slate-400 bg-opacity-60 lg:p-20 p-4">
         <h1 className="text-slate-50 font-extralight lg:text-7xl text-5xl uppercase p-2">
           "Personalize your {""}
@@ -34,11 +27,13 @@ export default function Home() {
         <h1 className="text-white text-5xl lg:text-7xl font-extrabold text-start uppercase p-2">
           Let's Start <span className="text-slate-500">With Us</span>
         </h1>
-        <p className="text-white text-xl text-start p-2 lg:w-[50%] w-full">
-          The Hills.com is all about experiencing the real Lombok. Combine the
+        <TextGenerateEffect
+          duration={0.6}
+          words="The Hills.com is all about experiencing the real Lombok. Combine the
           island's stunning natural beauty with the unique culture of the Sasak
-          people, creating unforgettable adventures for every traveler.
-        </p>
+          people, creating unforgettable adventures for every traveler."
+          className="lg:w-1/2 w-full text-slate-100 font-extralight p-2"
+        />
       </section>
     </main>
   );
