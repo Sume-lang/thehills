@@ -10,8 +10,7 @@ export default function Hero() {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
-      }}
-    >
+      }}>
       <section className="w-full h-full bg-slate-200 bg-opacity-40 flex flex-col text-center items-center justify-center">
         <h1 className="lg:text-7xl text-5xl font-light uppercase">
           Personalize your{" "}

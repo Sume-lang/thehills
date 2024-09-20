@@ -1,4 +1,6 @@
 import React from "react";
+import Dicsdata from "../Resources/Discovery";
+
 export default function Discovery() {
   return (
     <main className="flex flex-col w-full h-[500px] items-start justify-start">
@@ -9,17 +11,16 @@ export default function Discovery() {
         </h1>
       </section>
       <section className="flex flex-row items-start justify-start w-full">
-        <div className="w-1/2 h-[500px]">1</div>
-        <div className="w-full flex flex-row items-center justify-center shadow-inner p-4 h-[500px] gap-4">
-          <div className="w-1/4 bg-slate-300 p-2 shadow-md rounded-sm h-[470px] ">
-            <h1>Lorem ipsum</h1>
-          </div>          <div className="w-1/4 bg-slate-300 p-2 shadow-md rounded-sm h-[470px] ">
-            <h1>Lorem ipsum</h1>
-          </div>          <div className="w-1/4 bg-slate-300 p-2 shadow-md rounded-sm h-[470px] ">
-            <h1>Lorem ipsum</h1>
-          </div>          <div className="w-1/4 bg-slate-300 p-2 shadow-md rounded-sm h-[470px] ">
-            <h1>Lorem ipsum</h1>
-          </div>
+        <div className="w-1/2">1</div>
+        <div className="w-full flex flex-row items-start justify-start shadow-inner p-4 gap-4">
+          {Dicsdata.map((i) => (
+            <div
+              className="w-1/5 bg-slate-300 flex flex-col items-start justify-start gap-4 shadow-md rounded-sm h-[150px] p-4"
+              key={i.id}>
+              <h1 className="font-extralight uppercase">{i.title}</h1>
+              <span className="text-slate-500 w-10 h-10">{i.icons}</span>
+            </div>
+          ))}
         </div>
       </section>
     </main>
