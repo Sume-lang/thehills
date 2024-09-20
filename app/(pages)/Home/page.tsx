@@ -1,14 +1,38 @@
 import React from "react";
-import { Hero, Services,Discovery } from "../Home/Sections/sections";
+import {
+  Hero,
+  Services,
+  Newsevent,
+  Packages,
+  Activities,
+  Destination,
+  Discovery,
+} from "../Home/Sections/sections";
 
 export default function Home() {
   return (
-    <main className="">
-      <section className="w-full">
+    <main>
+      <section>
         <Hero />
       </section>
-      <section><Discovery /></section>
-      <section><Services /></section>
+      <section>
+        <Discovery />
+      </section>
+      <section>
+        <Services />
+      </section>
+      <section>
+        <Newsevent />
+      </section>
+      <section>
+        <Packages />
+      </section>
+      <section>
+        <Activities />
+      </section>
+      <section>
+        <Destination />
+      </section>
     </main>
   );
 }
