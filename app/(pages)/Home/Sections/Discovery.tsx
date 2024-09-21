@@ -3,26 +3,20 @@ import Dicsdata from "../Resources/Discovery";
 
 export default function Discovery() {
   return (
-    <main className="flex flex-col w-full h-[500px] items-center justify-center">
-      <section className="flex items-center justify-center w-full p-4 pt-20 px-20">
-        <h1 className="lg:text-7xl text-xl font-extralight uppercase">
-          Organize your{" "}
-          <span className="text-slate-600 font-extrabold">Needs</span>
-        </h1>
-      </section>
-      <section className="flex flex-row items-center justify-center w-full">
-        <div className="w-1/2 flex flex-row items-end justify-end shadow-md rounded-md p-4 gap-4">
-          {Dicsdata.map((i) => (
-            <div
-              className="w-1/2 bg-slate-300 flex flex-col items-start justify-start gap-4 shadow-md rounded-sm h-[200px] p-4"
-              key={i.id}
-            >
-              <h1 className="font-extrabold text-slate-500 uppercase">{i.title}</h1>
-              <span className="text-slate-500 w-10 h-10">{i.icons}</span>
-              <p className="text-slate-500">{i.desc}</p>
-            </div>
-          ))}
+    <main className="flex flex-row w-full h-[500px] items-center justify-center gap-2">
+      <section className="w-1/2 h-full border-2 border-slate-200">
+        <div className="w-full h-full flex flex-col items-center justify-start">
+          <h1 className="text-3xl font-extralight">
+            Recommendations{" "}
+            <span className="text-slate-500 font-bold">For</span>
+          </h1>
+          <h1 className="text-3xl font-extralight">
+            Beautiful <span className="">Destinations</span>
+          </h1>
         </div>
+      </section>
+      <section className="w-full h-full border-2 border-slate-200">
+        <h1 className="text-5xl uppercase font-extrabold">Page 2</h1>
       </section>
     </main>
   );
