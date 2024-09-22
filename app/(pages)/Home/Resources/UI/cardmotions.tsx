@@ -2,7 +2,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { ChevronRight, Key } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 const presence = {
   initial: {
@@ -45,7 +45,8 @@ const Cardmotion = ({
       variants={presence}
       initial="initial"
       animate="animate"
-      exit="exit">
+      exit="exit"
+    >
       {children}
     </motion.div>
   );
@@ -67,7 +68,8 @@ const Headermotion = ({
       variants={presence}
       initial="initial"
       animate="animate"
-      exit="exit">
+      exit="exit"
+    >
       {children}
     </motion.div>
   );
@@ -92,7 +94,8 @@ const Titlemotion = ({
       variants={presence}
       initial="initial"
       animate="animate"
-      exit="exit">
+      exit="exit"
+    >
       {children}
     </motion.h3>
   );
@@ -101,7 +104,6 @@ const Iconsmotion = ({
   children,
   className,
   style,
-  Key,
   ...props
 }: {
   children: React.ReactNode;
@@ -117,7 +119,8 @@ const Iconsmotion = ({
       initial="initial"
       animate="animate"
       exit="exit"
-      {...props}>
+      {...props}
+    >
       {children}
     </motion.span>
   );
@@ -139,7 +142,8 @@ const Descriptionmotion = ({
       variants={presence}
       initial="initial"
       animate="animate"
-      exit="exit">
+      exit="exit"
+    >
       {children}
     </motion.p>
   );
@@ -161,7 +165,8 @@ const Contentmotion = ({
       variants={presence}
       initial="initial"
       animate="animate"
-      exit="exit">
+      exit="exit"
+    >
       {children}
     </motion.div>
   );
@@ -171,7 +176,6 @@ const Footermotion = ({
   children,
   className,
   style,
-  url,
 }: {
   children: React.ReactNode;
   className?: string;
@@ -188,7 +192,8 @@ const Footermotion = ({
       variants={presence}
       initial="initial"
       animate="animate"
-      exit="exit">
+      exit="exit"
+    >
       {children}
       <ChevronRight size={15} className="text-slate-800" />
     </motion.div>

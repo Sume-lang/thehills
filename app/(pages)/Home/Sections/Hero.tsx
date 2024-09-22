@@ -1,10 +1,6 @@
 import React from "react";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
-import {
-  DivMotionleft,
-  DivMotionright,
-  DivMotioncenter,
-} from "../Resources/UI/divmotion";
+import { DivMotioncenter } from "../Resources/UI/divmotion";
 export default function Hero() {
   return (
     <main
@@ -16,11 +12,12 @@ export default function Hero() {
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "fixed",
         maskImage: "linear-gradient(to_bottom,transparent,black)",
-      }}>
+      }}
+    >
       <DivMotioncenter className="z-10 w-full h-full bg-slate-200 bg-opacity-40 flex flex-col text-start items-center justify-center p-3">
         <h1 className="lg:text-7xl text-5xl font-light uppercase">
           Personalize your{" "}
-          <span className="text-slate-200 font-extrabold"> adventures</span>
+          <span className="text-slate-800 font-extrabold"> adventures</span>
         </h1>
         <TextGenerateEffect
           duration={0.6}
