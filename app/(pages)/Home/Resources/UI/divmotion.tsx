@@ -1,15 +1,31 @@
-import React from "react";
+"use client";
 import { motion } from "framer-motion";
 
-const fx = {};
-
-export default function Divmotion({ children }: { children: React.ReactNode }) {
+const DivMotion = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
   return (
     <motion.div
-      className="w-full h-full flex flex-col items-center justify-center"
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.9 }}>
+      className={className}
+      exit={{
+        opacity: 0,
+        x: "100%",
+        transition: { duration: 0.7 },
+      }}
+      initial={{ opacity: 0, x: "-100%" }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{
+        duration: 0.7,
+        staggerChildren: 0.3,
+        delayChildren: 0.3,
+      }}
+    >
       {children}
     </motion.div>
   );
-}
+};
+export default DivMotion;
