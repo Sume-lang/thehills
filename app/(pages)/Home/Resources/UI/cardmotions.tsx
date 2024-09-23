@@ -38,15 +38,14 @@ const Cardmotion = ({
   return (
     <motion.div
       className={cn(
-        "md:w-1/2 lg:w-[250px] md:h-[250px] lg:h-[280px] w-full rounded-lg border border-slate-400 gap-1 p-4 hover:bg-slate-300 hover:shadow-md duration-300 ease-linear",
+        "flex flex-col rounded-lg border border-slate-400 p-4 md:w-[200px] sm:w-[140px] lg:w-[400px] lg:h-[400px] md:h-[200px] gap-4 hover:bg-slate-300 hover:shadow-md hover:text-slate-900 duration-300 ease-linear",
         className
       )}
       style={style}
       variants={presence}
       initial="initial"
       animate="animate"
-      exit="exit"
-    >
+      exit="exit">
       {children}
     </motion.div>
   );
@@ -68,8 +67,7 @@ const Headermotion = ({
       variants={presence}
       initial="initial"
       animate="animate"
-      exit="exit"
-    >
+      exit="exit">
       {children}
     </motion.div>
   );
@@ -87,15 +85,14 @@ const Titlemotion = ({
   return (
     <motion.h3
       className={cn(
-        "text-3xl font-extralight text-slate-600 leading-none",
+        "lg:text-6xl text-3xl font-extralight text-slate-400 leading-none",
         className
       )}
       style={style}
       variants={presence}
       initial="initial"
       animate="animate"
-      exit="exit"
-    >
+      exit="exit">
       {children}
     </motion.h3>
   );
@@ -113,14 +110,13 @@ const Iconsmotion = ({
 }) => {
   return (
     <motion.span
-      className={cn("items-center text-slate-400", className)}
+      className={cn("text-slate-400 lg:text-5xl text-3xl", className)}
       style={style}
       variants={presence}
       initial="initial"
       animate="animate"
       exit="exit"
-      {...props}
-    >
+      {...props}>
       {children}
     </motion.span>
   );
@@ -137,13 +133,12 @@ const Descriptionmotion = ({
 }) => {
   return (
     <motion.p
-      className={cn("font-extralight", className)}
+      className={cn("lg:text-3xl text-2xl text-md font-extralight", className)}
       style={style}
       variants={presence}
       initial="initial"
       animate="animate"
-      exit="exit"
-    >
+      exit="exit">
       {children}
     </motion.p>
   );
@@ -165,8 +160,7 @@ const Contentmotion = ({
       variants={presence}
       initial="initial"
       animate="animate"
-      exit="exit"
-    >
+      exit="exit">
       {children}
     </motion.div>
   );
@@ -185,15 +179,14 @@ const Footermotion = ({
   return (
     <motion.div
       className={cn(
-        "flex flex-row rounded-md w-[60px] justify-center items-center text-center cursor-pointer border border-slate-400 hover:bg-slate-400 bg-opacity-15 py-2 duration-300 ease-linear",
+        "cursor-pointer border border-slate-400 hover:bg-slate-400 bg-opacity-15 py-2 duration-300 ease-linear",
         className
       )}
       style={style}
       variants={presence}
       initial="initial"
       animate="animate"
-      exit="exit"
-    >
+      exit="exit">
       {children}
       <ChevronRight size={15} className="text-slate-800" />
     </motion.div>

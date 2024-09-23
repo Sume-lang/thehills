@@ -1,25 +1,28 @@
 import React from "react";
 import dataDisc from "../Resources/Discovery";
 import { DivMotionleft, DivMotionright } from "../Resources/UI/divmotion";
-import { Cardmotion, Iconsmotion } from "../Resources/UI/cardmotions";
+import {
+  Cardmotion,
+  Titlemotion,
+  Iconsmotion,
+  Descriptionmotion,
+} from "../Resources/UI/cardmotions";
 
 export default function Discovery() {
   return (
-    <main className="flex flex-col w-full h-full items-center justify-center gap-2 lg:p-4 p-2">
-      <section className="md:flex-auto md:justify-center flex flex-row flex-wrap items-start justify-start gap-4">
+    <main className="flex md:flex-row lg:flex-row sm:flex-row flex-col md:items-center lg:items-center sm:items-center md:justify-center lg:justify-center sm:justify-center flex-auto gap-2 p-4">
+      <section className="flex md:flex-row lg:flex-row flex-col gap-2">
         {dataDisc.map((item) => (
           <div key={item.id}>
-            <Cardmotion className="rounded-md  p-2 flex  flex-col items-center justify-center cursor-pointer">
+            <Cardmotion className="">
               <DivMotionleft>
-                <h1 className="lg:text-2xl text-2xl font-extralight text-slate-400">
-                  {item.title}
-                </h1>
+                <Titlemotion className="">{item.title}</Titlemotion>
               </DivMotionleft>
               <DivMotionleft>
                 <Iconsmotion>{item.icons}</Iconsmotion>
               </DivMotionleft>
-              <DivMotionright className="text-slate-400 text-center font-extralight">
-                {item.desc}
+              <DivMotionright className="">
+                <Descriptionmotion>{item.desc}</Descriptionmotion>
               </DivMotionright>
             </Cardmotion>
           </div>
