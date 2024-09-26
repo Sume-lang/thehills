@@ -60,7 +60,6 @@ const DivMotionright = ({
     </motion.div>
   );
 };
-
 const DivMotioncenter = ({
   children,
   className,
@@ -77,9 +76,9 @@ const DivMotioncenter = ({
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{
-        duration: 1.5,
-        staggerChildren: 0.3,
-        delayChildren: 0.3,
+        duration: 3,
+        staggerChildren: 3.5,
+        delayChildren: 3.5,
       }}>
       {children}
     </motion.div>
