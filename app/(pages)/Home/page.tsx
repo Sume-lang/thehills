@@ -22,6 +22,9 @@ export default function Home() {
         <Services />
       </section>
       <section>
+        <Destination />
+      </section>
+      <section>
         <Newsevent />
       </section>
       <section>
@@ -29,9 +32,6 @@ export default function Home() {
       </section>
       <section>
         <Activities />
-      </section>
-      <section>
-        <Destination />
       </section>
     </main>
   );

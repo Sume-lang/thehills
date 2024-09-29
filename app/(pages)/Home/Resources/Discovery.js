@@ -1,4 +1,3 @@
-import { desc } from "framer-motion/client";
 import {
   ShieldCheck,
   UsersRound,
@@ -68,5 +67,91 @@ const dataServices = [
     desc: "lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, voluptas. Voluptates, voluptas. Voluptates, voluptas. lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, voluptas. Voluptates, voluptas. Voluptates, voluptas.",
   },
 ];
+const dataTourism = [
+  {
+    id: 1,
+    title: "Beach",
+    qty: "50+",
+    location: "lorem",
+  },
+  {
+    id: 2,
+    title: "Waterfall",
+    qty: "5+",
+    location: "lorem",
+  },
+  {
+    id: 3,
+    title: "Hiking Spots",
+    qty: "10+",
+    location: "lorem",
+  },
+  {
+    id: 4,
+    title: "Sunset Spots",
+    qty: "10+",
+    location: "lorem",
+  },
+  {
+    id: 5,
+    title: "Foot Variants",
+    qty: "100+",
+    location: "lorem",
+  },
+  {
+    id: 6,
+    title: "Cultural",
+    qty: "5+",
+    location: "lorem",
+  },
+  {
+    id: 7,
+    title: "Dive Spots",
+    qty: "10+",
+    location: "lorem",
+  },
+  {
+    id: 8,
+    title: "Rafting Spots",
+    qty: "5+",
+    location: "lorem",
+  },
+  {
+    id: 9,
+    title: "Camping Spots",
+    qty: "10+",
+    location: "lorem",
+  },
+  {
+    id: 10,
+    title: "Conservations Activities",
+    qty: "5+",
+    location: "lorem",
+  },
+  {
+    id: 11,
+    title: "Accomodations",
+    qty: "100+",
+    location: "lorem",
+  },
+  {
+    id: 12,
+    title: "Paragliding Spots",
+    qty: "",
+    location: "lorem",
+  },
+  {
+    id: 13,
+    title: "Farming Lanscapes",
+    qty: "10+",
+    location: "lorem",
+  },
+  {
+    id: 14,
+    title: "Fishing",
+    qty: "10+",
+    location: "lorem",
+  },
+];
 export default Discovery;
-export { dataServices };
+export { dataServices, dataTourism };
