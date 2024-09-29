@@ -6,7 +6,7 @@ import {
 } from "../Resources/UI/divmotion";
 import { Button } from "@/components/ui/button";
 import { dataServices } from "../Resources/Discovery";
-import Test from "../../components/Costumize/TestLab";
+// import Test from "../../components/Costumize/TestLab";
 
 export default function Services() {
   return (
@@ -65,7 +65,8 @@ export default function Services() {
                 return (
                   <div
                     key={idx}
-                    className="w-full h-1/6 flex flex-col items-start justify-start gap-5">
+                    className="w-full h-1/6 flex flex-col items-start justify-start gap-5"
+                  >
                     <h1 className="lg:text-4xl text-3xl font-bold text-slate-800">
                       {data.title}
                     </h1>
@@ -76,7 +77,8 @@ export default function Services() {
                       <Button
                         variant="ghost"
                         size="lg"
-                        className="p-4 py-4 px-4">
+                        className="p-4 py-4 px-4"
+                      >
                         <a href={data.link}>More info</a>
                       </Button>
                     </div>
@@ -107,9 +109,9 @@ export default function Services() {
             </h1>
           </div>
         </DivMotionleft>
-        <div className="py-10">
+        {/* <div className="py-10">
           <Test />
-        </div>
+        </div> */}
       </section>
       <section className="flex flex-row items-start justify-start p-4 gap-8">
         <div className="w-1/4">
@@ -130,27 +132,7 @@ export default function Services() {
             Voluptate, numquam hic! Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Fugit esse ad iusto ipsam, aspernatur, nobis
             debitis et voluptatibus perspiciatis tempore sed. Ullam eum et vel
-            repellat sed. Suscipit, consequuntur quaerat. Lorem ipsum, dolor sit
-            amet consectetur adipisicing elit. Quae ipsa perspiciatis illo
-            officia modi alias, odio illum animi deleniti. Cumque ea debitis
-            vero adipisci sed voluptatem dolore molestiae vitae et! Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Soluta reiciendis
-            quisquam nostrum, ut vitae iusto eum nemo sed iste quae doloremque
-            laboriosam odio assumenda ad nihil adipisci optio error impedit.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-            praesentium ullam quaerat nihil consequuntur nesciunt excepturi quod
-            nulla quia provident animi consequatur cumque, sapiente temporibus
-            unde ducimus placeat. Voluptate, nobis. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Ad, cupiditate, facilis mollitia
-            architecto omnis autem non accusamus voluptas officia a explicabo,
-            deserunt cum quis animi illo ratione. Voluptate, numquam hic! Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Fugit esse ad
-            iusto ipsam, aspernatur, nobis debitis et voluptatibus perspiciatis
-            tempore sed. Ullam eum et vel repellat sed. Suscipit, consequuntur
-            quaerat. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Quae ipsa perspiciatis illo officia modi alias, odio illum animi
-            deleniti. Cumque ea debitis vero adipisci sed voluptatem dolore
-            molestiae vitae et!
+            repellat sed. Suscipit, consequuntur quaerat.
           </p>
         </div>
       </section>

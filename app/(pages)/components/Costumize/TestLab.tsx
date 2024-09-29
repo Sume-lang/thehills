@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { dataTourism } from "../../Home/Resources/Discovery";
-import Img from "next/image";
 
 export default function Destionantions() {
   const [open, setOpen] = useState(false);
@@ -11,10 +10,12 @@ export default function Destionantions() {
         {dataTourism.map((item) => (
           <div
             key={item.id}
-            className="w-full min-h-screen flex flex-col items-start justify-start gap-4">
+            className="w-full min-h-screen flex flex-col items-start justify-start gap-4"
+          >
             <div
               onClick={() => setOpen(!open)}
-              className="w-full min-h-screen flex flex-col items-start justify-start gap-4">
+              className="w-full min-h-screen flex flex-col items-start justify-start gap-4"
+            >
               <h1 className="lg:text-7xl text-5xl font-light text-slate-800">
                 {item.title}
               </h1>
@@ -27,11 +28,13 @@ export default function Destionantions() {
           open
             ? "w-full min-h-screen flex flex-col items-start justify-start gap-4"
             : "hidden"
-        }`}>
+        }`}
+      >
         {dataTourism.map((item) => (
           <div
             key={item.id}
-            className="w-full min-h-screen flex flex-col items-start justify-start gap-4">
+            className="w-full min-h-screen flex flex-col items-start justify-start gap-4"
+          >
             <div className="w-full min-h-screen flex flex-col items-start justify-start gap-4">
               <h1 className="lg:text-7xl text-5xl font-light text-slate-800">
                 {item.title}

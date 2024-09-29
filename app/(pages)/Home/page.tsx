@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Hero,
   Services,
@@ -8,21 +7,14 @@ import {
   Destination,
   Discovery,
 } from "../Home/Sections/sections";
-
 export default function Home() {
   return (
-    <main>
+    <main className="w-full min-h-screen flex flex-col">
       <section>
         <Hero />
       </section>
       <section>
-        <Discovery />
-      </section>
-      <section>
         <Services />
-      </section>
-      <section>
-        <Destination />
       </section>
       <section>
         <Newsevent />
@@ -32,6 +24,12 @@ export default function Home() {
       </section>
       <section>
         <Activities />
+      </section>
+      <section>
+        <Destination />
+      </section>
+      <section>
+        <Discovery />
       </section>
     </main>
   );
