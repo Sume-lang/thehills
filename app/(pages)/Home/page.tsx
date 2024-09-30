@@ -7,15 +7,11 @@ import {
   Destination,
   Discovery,
 } from "../Home/Sections/sections";
-import Testing from "./Sections/testingdex";
 export default function Home() {
   return (
     <main className="w-full min-h-screen flex flex-col">
       <section>
         <Hero />
-      </section>
-      <section>
-        <Testing />
       </section>
       <section>
         <Services />

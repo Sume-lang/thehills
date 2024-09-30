@@ -61,7 +61,7 @@ const dataServices = [
   },
   {
     id: 3,
-    title: "Tours",
+    title: "Tours and Travels",
     link: "/Home/Tour",
     icons: "lorem",
     desc: "lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, voluptas. Voluptates, voluptas. Voluptates, voluptas. lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, voluptas. Voluptates, voluptas. Voluptates, voluptas.",
