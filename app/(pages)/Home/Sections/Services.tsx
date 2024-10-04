@@ -154,7 +154,7 @@ export default function Services() {
           </div>
         </DivMotioncenter>
       </section>
-      <section className="flex lg:flex-row flex-col lg:items-start lg:justify-start">
+      <section className="flex lg:flex-row flex-col lg:items-center lg:justify-center">
         <div className="lg:w-1/2 w-full h-screen flex flex-col">
           <DivMotionleft>
             <div className="flex flex-col w-full">
@@ -209,7 +209,6 @@ export default function Services() {
             </p>
           </DivMotionleft>
         </div>
-        <div className="lg:w-full hidden h-screen lg:flex flex-col items-center justify-center"></div>
       </section>
       <section className="flex flex-row items-start justify-start p-4 gap-8">
         <div className="w-1/4"></div>

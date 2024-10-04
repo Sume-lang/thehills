@@ -28,7 +28,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/(pages)/Home/api/products/route.js"
+    "app/(pages)/Home/api/products/route.js",
+    "app/testpage/api/user/route.tsx"
   ],
   "exclude": ["node_modules"]
 }
