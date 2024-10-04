@@ -1,10 +1,13 @@
-drop database if exist Thehills;
-create database Thehills;
-
+use thehills;
 
 --accountbaseline
 create table Users ();
 create table Customers();
+create table drivers();
+create table guides();
+
+--vendorsbaseline
+create table Vendors ();
 
 -- productbaseline
 create table Products ();
@@ -24,6 +27,9 @@ create table Financialreport ();
 create table Payment_methode ();
 create table Bookings ();
 
+--setting and regulations
+create table settings ();
+create table policys ();
 
 
 

@@ -1,0 +1,70 @@
+{
+    // workbenchsettings.json
+    "workbench.colorTheme": "JetBrains Darcula Theme",
+    "workbench.sideBar.location": "right",
+    "workbench.productIconTheme": "fluent-icons",
+    // "workbench.layoutControl.enabled": false,
+    "workbench.editor.showTabs": "multiple",
+    "workbench.tree.indent": 15,
+    "workbench.startupEditor": "none",
+    "workbench.editor.enablePreview": true,
+    "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+    "workbench.colorCustomizations": {
+        "inlineparameters.annotationsBackground": "#282AE00",
+        "inlineparameters.annotationsForeground": "#7B82AF",
+        "scrollbar.shadow": "#24292E00",
+    },
+    "window.openFoldersInNewWindow": "on",
+    "window.newWindowDimensions": "fullscreen",
+    "files.autoSave": "afterDelay",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "files.associations": {
+        ".jsx": "",
+        "*.css": "css",
+        "*.html": "html",
+        "*.php": "php"
+    },
+    "editor.mouseWheelZoom": true,
+    "[javascript]": {
+        "editor.maxTokenizationLineLength": 2500,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "editor.fontWeight": "450",
+    "editor.lineHeight": 1.5,
+    "editor.lineNumbers": "on",
+    "editor.folding": true,
+    "editor.glyphMargin": true,
+    "editor.guides.indentation": true,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.unicodeHighlight.ambiguousCharacters": true,
+    "editor.unicodeHighlight.invisibleCharacters": true,
+    "editor.cursorStyle": "underline",
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": true,
+    "editor.autoClosingOvertype": "never",
+    "editor.wordWrap": "wordWrapColumn",
+    "explorer.confirmDelete": false,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "vsicons.dontShowNewVersionMessage": true,
+    "breadcrumbs.enabled": false,
+    "breadcrumbs.filePath": "off",
+    "breadcrumbs.symbolPath": "on",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.fontFamily": "'MensloLGS','Hack Nerd Font',Monospace",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.enableMultiLinePasteWarning": "always",
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.cursorBlinking": true,
+    "explorer.confirmDragAndDrop": false,
+    "Prettier-SQL.ignoreTabSettings": true,
+    // "window.commandCenter": false
+}
