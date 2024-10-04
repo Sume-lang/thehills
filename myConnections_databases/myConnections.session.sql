@@ -4,6 +4,7 @@ CREATE TABLE Customers (
     customer_name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
     identity_number VARCHAR(255) NOT NULL,
+    passport_number VARCHAR (255) NOT NULL,
     country_from VARCHAR(255) NOT NULL,
     gender ENUM ('Male', 'Female','Other') NOT NULL,
     addresses VARCHAR(255) NOT NULL,
@@ -27,6 +28,11 @@ CREATE TABLE Vihicles (
     owners VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE accomdations (
+    id int AUTO_INCREMENT PRIMARY,
+    type_hotels VARCHAR (255) NOT NULL,
 );
 
 -- product details databases
