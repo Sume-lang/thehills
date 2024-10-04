@@ -1,4 +1,4 @@
-USE DATABASE thehills;
+USE thehills;
 
 
 -- drivers tables
