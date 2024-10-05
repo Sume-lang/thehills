@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { dataServices } from "../Resources/Discovery";
 // import Test from "../../components/Costumize/TestLab";
 import Img from "next/image";
-
+import Testing from "./testingdex";
 const imgData = [
   {
     id: 1,
@@ -132,7 +132,8 @@ export default function Services() {
                 return (
                   <div
                     key={idx}
-                    className="w-full h-1/6 flex flex-col items-start justify-start gap-5">
+                    className="w-full h-1/6 flex flex-col items-start justify-start gap-5"
+                  >
                     <h1 className="lg:text-2xl text-3xl font-bold text-slate-800">
                       {data.title}
                     </h1>
@@ -143,7 +144,8 @@ export default function Services() {
                       <Button
                         variant="ghost"
                         size="lg"
-                        className="p-4 py-4 px-4">
+                        className="p-4 py-4 px-4"
+                      >
                         <a href={data.link}>More info</a>
                       </Button>
                     </div>
@@ -154,7 +156,7 @@ export default function Services() {
           </div>
         </DivMotioncenter>
       </section>
-      <section className="flex lg:flex-row flex-col lg:items-center lg:justify-center">
+      <section className="flex lg:flex-row flex-col lg:items-start lg:justify-start">
         <div className="lg:w-1/2 w-full h-screen flex flex-col">
           <DivMotionleft>
             <div className="flex flex-col w-full">
@@ -166,9 +168,6 @@ export default function Services() {
               </h1>
             </div>
           </DivMotionleft>
-          {/* <div className="py-10">
-          <Test />
-        </div> */}
           <DivMotionright>
             <p className="text-2xl font-light text-slate-400">
               We provide the best services{" "}
@@ -178,40 +177,45 @@ export default function Services() {
             </p>
           </DivMotionright>
           <DivMotionleft className="flex flex-col gap-2 py-4">
-            <DivMotioncenter>
-              <Img
-                src="/Assets/Images/Rinjani-Mointain-2.jpg"
-                width={800}
-                height={500}
-                alt=""
-                className="float-left object-cover filter grayscale hover:grayscale-0 duration-300 ease-linear"
-                style={{
-                  objectFit: "fill",
-                  overflowBlock: "auto",
-                  width: "90%",
-                  objectPosition: "50% 50%",
-                  height: "auto",
-                }}
-              />
-            </DivMotioncenter>
-            <p className="w-full text-xl font-light text-slate-900">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur reprehenderit, fugiat iusto earum, repellat doloribus
-              dicta fuga aperiam ut excepturi facilis eius nulla odio nemo!
-              Doloremque aliquid delectus vero tempore! Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Quasi molestias facilis
-              recusandae vel cumque expedita voluptates non magnam praesentium
-              incidunt quia excepturi repellat aspernatur, distinctio aliquid,
-              ipsam vero dolore! Consequatur! Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Enim quasi officia illo perspiciatis
-              recusandae adipisci eveniet? Quae, fugit, temporibus labore aut
-              laudantium eius molestiae doloribus odit natus modi, quod optio.
-            </p>
+            <div className="w-full flex flex-row items-start justify-start">
+              <DivMotioncenter>
+                <Img
+                  src="/Assets/Images/Rinjani-Mointain-2.jpg"
+                  width={800}
+                  height={500}
+                  alt=""
+                  className="filter grayscale hover:grayscale-0 duration-300 ease-linear"
+                  style={{
+                    objectFit: "fill",
+                    overflowBlock: "auto",
+                    width: "90%",
+                    objectPosition: "50% 50%",
+                    height: "auto",
+                  }}
+                />
+                <p className="w-[90%] text-xl font-light text-slate-900">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequuntur reprehenderit, fugiat iusto earum, repellat
+                  doloribus dicta fuga aperiam ut excepturi facilis eius nulla
+                  odio nemo! Doloremque aliquid delectus vero tempore! Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                  molestias facilis recusandae vel cumque expedita voluptates
+                  non magnam praesentium incidunt quia excepturi repellat
+                  aspernatur, distinctio aliquid, ipsam vero dolore!
+                  Consequatur! Lorem ipsum, dolor sit amet consectetur
+                  adipisicing elit. Enim quasi officia illo perspiciatis
+                  recusandae adipisci eveniet? Quae, fugit, temporibus labore
+                  aut laudantium eius molestiae doloribus odit natus modi, quod
+                  optio.
+                </p>
+              </DivMotioncenter>
+            </div>
+            <div className="flex flex-grow justify-start">
+              <Testing />
+            </div>
           </DivMotionleft>
         </div>
-      </section>
-      <section className="flex flex-row items-start justify-start p-4 gap-8">
-        <div className="w-1/4"></div>
+        <div className="lg:w-1/2 w-full h-screen flex flex-col">Testing</div>
       </section>
     </main>
   );
