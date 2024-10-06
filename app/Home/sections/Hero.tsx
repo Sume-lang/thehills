@@ -1,57 +1,49 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
+const Animated = [{}];
 
 export default function Hero() {
-  const { scrollYProgress } = useScroll();
-  const y = useTransform(scrollYProgress, [0, 1], ["20%", "100%"]);
   return (
-    <section className="relative">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="absolute inset-0 -z-10 h-[50vh] w-full filter grayscale hover:grayscale-0 duration-500 ease-in-out"
-        style={{ y }}
-      >
-        <div
-          className="absolute inset-0 flex h-full w-full items-center justify-center"
-          style={{
-            backgroundImage: "url('/Assets/Images/Beach-6.jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat"
-          }}
-        />
-      </motion.div>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 bg-slate-400 bg-opacity-60">
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div className="text-center">
-            <h1 className="lg:text-7xl uppercase font-extralight tracking-tight text-white sm:text-6xl">
-              The Hills
-            </h1>
-            <p className="mt-6 text-xl lg:text-xl leading-8 text-gray-900">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
-              impedit iure. Magnam sint ipsum accusantium eligendi aut magni
-              unde velit, ex tempore ab dolorum soluta. Cum neque asperiores
-              dicta iusto. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Natus, impedit iure. Magnam sint ipsum accusantium eligendi
-              aut magni unde velit, ex tempore ab dolorum soluta. Cum neque
-              asperiores dicta iusto.
-            </p>
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1.5 }}
+      className="flex flex-col justify-center items-center relative min-h-screen filter grayscale hover:grayscale-0 duration-300 ease-linear "
+      style={{
+        backgroundImage: "url('/Assets/Images/Beach-5.jpg')",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <section className="flex flex-col justify-center items-center bg-slate-300 bg-opacity-30 p-20 h-screen w-full">
+        <div className="flex flex-col justify-start items-start bg-slate-200 bg-opacity-30 p-20 h-auto rounded-md gap-10">
+          <h1 className="lg:text-7xl text-2xl font-extrabold uppercase text-slate-900">
+            Welcome to TheHills <br />
+            <span className="text-slate-900 font-extralight">
+              Explore Lombok Island with Us!
+            </span>
+          </h1>
+          <p className="w-1/2 text-start lg:text-4xl text-xl font-extralight text-slate-900">
+            We invite you to experience the natural beauty and rich culture of
+            Lombok Island in a way that's unforgettable. Whether you're seeking
+            adventure, relaxation, or a deep connection with the local
+            community, our services are designed to cater to every traveler's
+            needs, all while prioritizing sustainability and respect for the
+            environment.
+          </p>
+          <div>
             <Link
               href="/"
-              className="mt-10 inline-block rounded-lg bg-white px-5 py-3 text-base font-semibold leading-7 text-gray-900 shadow-sm ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+              className="text-3xl font-extrabold uppercase text-slate-900"
             >
-              Get started
-              <span className="text-gray-600" aria-hidden="true">
-                {" "}
-                &rarr;
-              </span>
+              get Started to Explore
             </Link>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </motion.main>
   );
 }
