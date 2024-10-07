@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-const Animated = [{}];
+import { ChevronRight } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -26,21 +26,24 @@ export default function Hero() {
               Explore Lombok Island with Us!
             </span>
           </h1>
-          <p className="w-1/2 text-start lg:text-4xl text-xl font-extralight text-slate-900">
+          <p className="w-1/2 text-start lg:text-2xl text-xl text-slate-900">
             We invite you to experience the natural beauty and rich culture of
-            Lombok Island in a way that's unforgettable. Whether you're seeking
+            Lombok Island in a way that is unforgettable. Whether you seeking
             adventure, relaxation, or a deep connection with the local
-            community, our services are designed to cater to every traveler's
-            needs, all while prioritizing sustainability and respect for the
-            environment.
+            community, our services are designed to cater to every
+            traveler&apos;s needs, all while prioritizing sustainability and
+            respect for the environment.
           </p>
-          <div>
+          <div className="flex flex-row items-center hover:bg-slate-200 transition duration-300 ease-linear p-3 rounded-md gap-3">
             <Link
               href="/"
               className="text-3xl font-extrabold uppercase text-slate-900"
             >
               get Started to Explore
             </Link>
+            <span>
+              <ChevronRight size={48} strokeWidth={0.5} />
+            </span>
           </div>
         </div>
       </section>
