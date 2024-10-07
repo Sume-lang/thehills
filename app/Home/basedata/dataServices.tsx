@@ -1,47 +1,16 @@
 import { Car, School, Earth } from "lucide-react";
+import {
+  DataTourandTravels,
+  DataTransortation,
+  DataAccomodations,
+} from "./product";
 const dataServices = [
   {
     id: 1,
     title: "Transportation",
     secondtitle: "Transportation",
     description: "We offer transportation services to suit your needs.",
-    content: [
-      {
-        title: "Items 1",
-        icon: "",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
-      {
-        title: "Items 2",
-        icon: "",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
-      {
-        title: "Items 3",
-        icon: "",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
-      {
-        title: "Items 4",
-        icon: "",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
-      {
-        title: "Items 5",
-        icon: "",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
-      {
-        title: "Items 6",
-        icon: "",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
-      {
-        title: "Items 7",
-        icon: "",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
-    ],
+    content: <DataTransortation />,
     Img: "/Assets/Images/Beach-1.jpg",
     icon: <Car size={48} strokeWidth={0.5} />,
   },
@@ -50,23 +19,7 @@ const dataServices = [
     title: "Accomodations",
     secondtitle: "Accomodations",
     description: "We offer accomodations to suit your needs.",
-    content: [
-      {
-        title: "Items 1",
-        icon: "",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
-      {
-        title: "Items 2",
-        icon: "",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
-      {
-        title: "Items 3",
-        icon: "",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
-    ],
+    content: <DataAccomodations />,
     Img: "/Assets/Images/Beach-1.jpg",
     icon: <School size={48} strokeWidth={0.5} />,
   },
@@ -75,26 +28,9 @@ const dataServices = [
     title: "Tour",
     secondtitle: "Tour",
     description: "We offer tour services to suit your needs.",
-    content: [
-      {
-        title: "Items 1",
-        icon: "",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
-      {
-        title: "Items 2",
-        icon: "",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
-      {
-        title: "Items 3",
-        icon: "",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      },
-    ],
+    content: <DataTourandTravels />,
     Img: "/Assets/Images/Beach-1.jpg",
     icon: <Earth size={48} strokeWidth={0.5} />,
   },
 ];
-
 export default dataServices;

@@ -1,0 +1,150 @@
+"use client";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { Car, School, ChevronRight, Earth } from "lucide-react";
+import TourandTravels from "../basedata/product";
+const Servicedatas = [
+  {
+    id: 1,
+    title: "Transportation",
+    Desc: "We offer transportation services to suit your needs.",
+    icon: <Car size={48} strokeWidth={0.5} />,
+    content: "side Content",
+  },
+  {
+    id: 2,
+    title: "Accomodations",
+    Desc: "We offer accomodations to suit your needs.",
+    icon: <School size={48} strokeWidth={0.5} />,
+    content: "side Content",
+  },
+  {
+    id: 3,
+    title: "Tour",
+    Desc: "We offer tour services to suit your needs.",
+    icon: <Earth size={48} strokeWidth={0.5} />,
+    content: "side Content",
+  },
+];
+export default function Services({
+  DataTourandTravels: TourandTravels,
+}: {
+  DataTourandTravels: TourandTravels[];
+}) {
+  const [isOpen, setIsOpen] = useState(false);
+  const Toggle = () => setIsOpen(!isOpen);
+  return (
+    <main className="w-full h-screen flex flex-row justify-start items-start p-4 gap-4">
+      <motion.section
+        className="w-1/2"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 2.5 }}
+      >
+        <div>
+          <h1 className="text-5xl font-extrabold uppercase text-slate-900">
+            Our{" "}
+            <span className="text-slate-600 font-extralight">Services.</span>
+          </h1>
+          <motion.p
+            initial="initial"
+            animate="animate"
+            className="w-full text-start lg:text-2xl text-xl font-extralight text-slate-900"
+          >
+            We offer a variety of services to suit your needs. From reservations
+            to transportation, we have you covered. Whether you need a ride to
+            explore the city or just want to take some time to relax, we've got
+            you covered. Our services are designed to cater to every traveler's
+            needs, all while prioritizing sustainability and respect for the
+            environment.
+          </motion.p>
+        </div>
+        <motion.div
+          initial="initial"
+          animate="animate"
+          className="w-full flex flex-row justify-between items-center text-start lg:text-4xl text-xl font-extralight text-slate-900 gap-3"
+        >
+          {Servicedatas.map((service) => (
+            <div
+              onClick={Toggle}
+              key={service.id}
+              className="flex flex-col justify-start items-start gap-3 p-2"
+            >
+              <span className="text-4xl font-extralight">{service.icon}</span>
+              <h1 className="text-4xl font-bold text-slate-500">
+                {service.title}
+              </h1>
+              <p className="text-2xl font-extralight text-slate-500">
+                {service.Desc}
+              </p>
+              <div>
+                <h1
+                  className="text-xl flex flex-row font-extralight text-slate-500 p-3 border border-slate-500 rounded-md hover:cursor-pointer hover:bg-slate-500 hover:text-slate-300 duration-300 ease-linear"
+                  onClick={Toggle}
+                  style={{ cursor: "pointer" }}
+                  key={service.id}
+                >
+                  Check More <ChevronRight />
+                </h1>
+              </div>
+            </div>
+          ))}
+        </motion.div>
+      </motion.section>
+      {isOpen && <h1>Satu</h1>}
+
+      {/* <motion.section
+        className="w-full rounded-xl 
+        filter grayscale hover:grayscale-0 transition duration-500 ease-linear  bg-slate-300 bg-opacity-50"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        style={{
+          backgroundImage: "url('/Assets/Images/Beach-4.jpg')",
+          backgroundAttachment: "fixed",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          cursor: "pointer",
+        }}
+        transition={{ duration: 2.5 }}
+      >
+        <div className="w-full bg-slate-300 bg-opacity-70 p-4">
+          <div className="flex flex-col justify-start items-center">
+            <h1 className="text-5xl font-extrabold uppercase text-slate-900 p-4">
+              Our{" "}
+              <span className="text-slate-600 font-extralight">
+                Transportations
+              </span>
+            </h1>
+            <p className="w-1/2 text-center text-2xl text-slate-50">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+              quam amet magnam facere sapiente sequi, autem ex nostrum officia
+              ullam excepturi, a ad hic qui corporis eveniet ab quia doloremque!
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia at
+              dolore facilis provident animi quod eum harum fugit incidunt
+              inventore nobis temporibus voluptatibus, nisi earum? Tempora
+              perspiciatis ut voluptates suscipit?
+            </p>
+          </div>
+          <div className="flex flex-row justify-start items-start">
+            <div className="w-full">
+              <h1 className="text-5xl font-extrabold uppercase text-slate-900">
+                Private{" "}
+                <span className="text-slate-600 font-extralight">
+                  Transportation
+                </span>
+              </h1>
+              <p className="w-1/3 text-2xl text-justify text-slate-50">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Dolore, maiores placeat. Placeat minus accusamus magnam
+                obcaecati eveniet maiores consequatur, vel cupiditate ullam?
+                Fugiat id corrupti nisi repudiandae, illum deleniti? Nam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </motion.section> */}
+    </main>
+  );
+}
