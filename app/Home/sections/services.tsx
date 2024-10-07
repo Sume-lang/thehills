@@ -14,7 +14,13 @@ const handleToggle = (
 export default function Services() {
   const [activeId, setActiveId] = useState(0);
   return (
-    <motion.main className="flex flex-row items-start justify-start p-10">
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 2.5 }}
+      className="flex flex-row items-start justify-start p-10"
+    >
       <section className="w-1/2 flex flex-col justify-start items-start">
         <div className="flex flex-col p-3">
           <h1 className="text-5xl font-extrabold text-slate-900">
@@ -38,14 +44,14 @@ export default function Services() {
           {mainProductdata.map((i) => (
             <div key={i.id} className="w-1/3 p-1 gap-10">
               <span>{i.icons}</span>{" "}
-              <h1 className="text-2xl font-bold text-slate-500 cursor-pointer">
+              <h1 className="text-5xl font-bold text-slate-500 cursor-pointer">
                 {i.title}
               </h1>{" "}
               <p className="text-2xl font-extralight text-slate-500">
                 {i.desc}
               </p>
               <div
-                className="w-[70%] flex flex-row justify-start items-start gap-10 cursor-pointer border border-slate-500 rounded-md p-2 hover:bg-slate-500 hover:text-slate-300 duration-300 ease-linear"
+                className="w-[30%] flex flex-row justify-center items-center cursor-pointer border border-slate-500 rounded-md p-2 hover:bg-slate-500 hover:text-slate-300 duration-300 ease-linear"
                 onClick={() => handleToggle(i.id, setActiveId)}
               >
                 <span className="text-xl font-extralight">See More</span>
@@ -55,7 +61,7 @@ export default function Services() {
           ))}
         </div>
       </section>
-      <section className="w-[65%] h-screen filter grayscale hover:grayscale-0 transition duration-500 ease-linear flex flex-col justify-center items-center">
+      <section className="w-[65%] h-screen filter grayscale hover:grayscale-0 transition duration-500 ease-linear flex flex-col justify-center items-center rounded-xl">
         {activeId !== 0 && (
           <motion.div
             className="w-full h-screen rounded-md"
