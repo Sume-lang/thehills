@@ -61,10 +61,10 @@ export default function Services() {
           ))}
         </div>
       </section>
-      <section className="w-[65%] h-screen filter grayscale hover:grayscale-0 transition duration-500 ease-linear flex flex-col justify-center items-center rounded-xl">
+      <section className="w-[65%] filter grayscale hover:grayscale-0 transition duration-500 ease-linear flex flex-col justify-center items-center rounded-xl">
         {activeId !== 0 && (
           <motion.div
-            className="w-full h-screen rounded-md"
+            className="w-full rounded-md"
             initial={{ opacity: 0 }}
             animate={{ opacity: activeId !== 0 ? 1 : 0 }}
             exit={{ opacity: 0 }}
@@ -76,7 +76,7 @@ export default function Services() {
 
         {activeId === 0 && (
           <motion.div
-            className="w-full h-screen rounded-md"
+            className="w-full rounded-md"
             initial={{ opacity: 0 }}
             animate={{ opacity: activeId !== 0 ? 1 : 0 }}
             exit={{ opacity: 0 }}
