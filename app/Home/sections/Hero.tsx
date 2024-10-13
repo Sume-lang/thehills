@@ -1,52 +1,39 @@
-"use client";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { ChevronRight } from "lucide-react";
-
 export default function Hero() {
   return (
-    <motion.main
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 1.5 }}
-      className="flex flex-col justify-center items-center relative min-h-screen filter grayscale hover:grayscale-0 duration-300 ease-linear "
+    <main
+      className="w-full h-screen flex flex-col justify-center items-center filter grayscale hover:grayscale-0 transition duration-500 ease-linear bg-gray-300 bg-opacity-50"
       style={{
-        backgroundImage: "url('/Assets/Images/Beach-5.jpg')",
+        backgroundImage: "url('/Assets/Images/Rinjani-Mointain-3.jpg')",
         backgroundPosition: "center",
-        backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
       }}
     >
-      <section className="flex flex-col justify-center items-center bg-slate-300 bg-opacity-30 p-20 h-screen w-full">
-        <div className="flex flex-col justify-start items-start bg-slate-200 bg-opacity-30 p-20 h-auto rounded-md gap-10">
-          <h1 className="lg:text-7xl text-2xl font-extrabold uppercase text-slate-900">
-            Welcome to TheHills <br />
-            <span className="text-slate-900 font-extralight">
-              Explore Lombok Island with Us!
+      <section className="w-full p-4 h-screen bg-gray-400 bg-opacity-50 flex items-center justify-center">
+        <div className="lg:p-20 lg:w-1/2 w-full">
+          <h1 className="lg:text-7xl text-2xl font-extrabold text-slate-50 uppercase">
+            Welcome to{" "}
+            <span className="text-gray-50 font-extralight">The Hills</span>
+          </h1>
+          <h1 className="lg:w-1/2 text-4xl font-extrabold text-slate-50 uppercase bg-gray-400 bg-opacity-80 p-4 rounded-sm">
+            Provide{" "}
+            <span className="text-gray-50 font-extralight">
+              Unlimited Services
             </span>
           </h1>
-          <p className="w-1/2 text-start lg:text-2xl text-xl text-slate-900">
-            We invite you to experience the natural beauty and rich culture of
-            Lombok Island in a way that is unforgettable. Whether you seeking
-            adventure, relaxation, or a deep connection with the local
-            community, our services are designed to cater to every
-            traveler&apos;s needs, all while prioritizing sustainability and
-            respect for the environment.
+          <p className="lg:text-3xl font-extralight text-slate-50">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            quibusdam aspernatur iusto quia dolorum adipisci sunt officia
+            consequuntur exercitationem eos temporibus sit ipsa alias molestias
+            tempore eum illo accusamus atque. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Numquam maxime similique praesentium
+            ullam itaque laborum, nobis repellat in fugiat, aliquam doloribus.
+            Numquam doloremque atque voluptates consectetur, aspernatur
+            asperiores ad reiciendis.
           </p>
-          <div className="flex flex-row items-center hover:bg-slate-200 transition duration-300 ease-linear p-3 rounded-md gap-3">
-            <Link
-              href="/"
-              className="text-3xl font-extrabold uppercase text-slate-900"
-            >
-              get Started to Explore
-            </Link>
-            <span>
-              <ChevronRight size={48} strokeWidth={0.5} />
-            </span>
-          </div>
         </div>
       </section>
-    </motion.main>
+    </main>
   );
 }

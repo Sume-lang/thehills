@@ -9,7 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@nextui-org/react": "^2.4.6",
+    "@nextui-org/button": "^2.0.38",
+    "@nextui-org/calendar": "^2.0.12",
+    "@nextui-org/card": "^2.0.34",
+    "@nextui-org/dropdown": "^2.1.31",
+    "@nextui-org/react": "^2.4.8",
+    "@nextui-org/system": "^2.2.6",
+    "@nextui-org/theme": "^2.2.11",
     "@radix-ui/react-dropdown-menu": "^2.1.2",
     "@radix-ui/react-menubar": "^1.1.2",
     "@radix-ui/react-navigation-menu": "^1.2.1",
@@ -19,7 +25,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "dotenv": "^16.4.5",
-    "framer-motion": "^11.5.4",
+    "framer-motion": "^11.11.7",
     "lucide": "^0.441.0",
     "lucide-react": "^0.441.0",
     "mysql2": "^3.11.3",

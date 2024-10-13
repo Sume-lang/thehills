@@ -1,13 +1,9 @@
+"use client";
+import { Hero, Services, Features } from "./sections/sections";
 import React from "react";
-import Hero from "./sections/Hero";
-import Services from "./sections/services";
-import LombokOverviews from "./sections/lombokoverviews";
-import TheHillOverview from "./sections/TheHillOverview";
-import MainTest from "./sections/TestingLab/main";
-
-export default function Home() {
+export default function Page() {
   return (
-    <main className="relative flex min-h-screen flex-col">
+    <main className="w-full h-screen">
       <section>
         <Hero />
       </section>
@@ -15,13 +11,7 @@ export default function Home() {
         <Services />
       </section>
       <section>
-        <TheHillOverview />
-      </section>
-      <section>
-        <LombokOverviews />
-      </section>
-      <section>
-        <MainTest />
+        <Features />
       </section>
     </main>
   );
