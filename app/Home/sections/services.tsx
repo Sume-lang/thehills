@@ -18,13 +18,13 @@ export default function Services() {
           dolorem a officia quisquam praesentium.
         </p>
       </section>
-      <section className="flex lg:flex-row flex-col items-start justify-center">
+      <section className="w-full flex lg:flex-row flex-col items-start justify-center">
         <div className="lg:p-20 h-screen w-full flex justify-center">
           <div className="w-full flex lg:flex-row flex-col lg:items-start lg:justify-center items-center lg:gap-20 gap-2">
             {services.map((i) => (
               <div key={i.id} className="p-4">
-                <span>{i.icon}</span>
-                <h1>{i.name}</h1>
+                <span className="text-5xl">{i.icon}</span>
+                <h1 className="text-3xl uppercase font-bold">{i.name}</h1>
                 <p>{i.description}</p>
               </div>
             ))}
@@ -32,6 +32,7 @@ export default function Services() {
           {}
         </div>
       </section>
+      <section></section>
     </main>
   );
 }
