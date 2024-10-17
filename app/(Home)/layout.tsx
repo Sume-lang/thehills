@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import "./module.Home.css";
+import Navigations from "./components/navigations/navigations";
 
 export const metadata: Metadata = {
   title: "The Hills",
@@ -11,5 +12,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <main className="w-full h-screen">{children}</main>;
-}
+  return (
+    <main className="w-full h-screen">
+      <Navigations />
+      {children}
+    </main>
+  );
+} 

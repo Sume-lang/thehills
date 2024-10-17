@@ -1,7 +1,8 @@
+
 export default function Hero() {
   return (
     <main
-      className="w-full h-screen flex flex-col justify-center items-center filter grayscale hover:grayscale-0 transition duration-500 ease-linear bg-gray-300 bg-opacity-50"
+      className="w-full h-screen flex flex-col justify-center items-center filter grayscale hover:grayscale-0 transition duration-500 ease-linear bg-gray-600 bg-opacity-50"
       style={{
         backgroundImage: "url('/Assets/Images/Rinjani-Mointain-3.jpg')",
         backgroundPosition: "center",
