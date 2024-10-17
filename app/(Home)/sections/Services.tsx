@@ -1,4 +1,5 @@
 import { services } from "../datastores/services";
+import Link from "next/link";
 export default function Services() {
   return (
     <main className="w-full h-screen lg:p-24 p-4 flex-col gap-4 lg:justify-start lg:items-center justify-center items-start">
@@ -26,6 +27,7 @@ export default function Services() {
                 <span className="text-5xl">{i.icon}</span>
                 <h1 className="text-3xl uppercase font-bold">{i.name}</h1>
                 <p>{i.description}</p>
+                <Link href={i.link}>Read More</Link>
               </div>
             ))}
           </div>

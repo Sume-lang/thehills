@@ -1,26 +1,24 @@
-import { Car, School, Earth } from "lucide-react";
-
 const services = [
   {
     id: 1,
     name: "Tour And Travels",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    icon: <Earth size={48} strokeWidth={1.5} />,
-    link: "/services/service1",
+    icon: "",
+    link: "./TourandTravels",
   },
   {
     id: 2,
     name: "Accomodations",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    icon: <School size={48} strokeWidth={1.5} />,
-    link: "/services/service2",
+    icon: "",
+    link: "./Accomodations",
   },
   {
     id: 3,
     name: "Transportations",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    icon: <Car size={48} strokeWidth={1.5} />,
-    link: "/services/service3",
+    icon: "",
+    link: "./Transportations",
   },
 ];
 
