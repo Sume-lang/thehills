@@ -35,8 +35,10 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/(pages)/Home/api/products/route.js",
-    "app/weblearningsets/api/user/route.tsx"
-, "app/Home/basedata/productData/productlist.js"  ],
+    "app/weblearningsets/api/user/route.tsx",
+    "app/(Home)/basedata/productData/productlist.js",
+    "app/(Home)/sections/sections.js"
+  ],
   "exclude": [
     "node_modules"
   ]
