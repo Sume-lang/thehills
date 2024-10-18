@@ -1,7 +1,7 @@
 export default function Tours() {
   return (
     <main
-      className="filter brightness-50 w-full h-screen gradient-to-b from-black to-slate-600 flex flex-col justify-center items-center"
+      className="filter brightness-50 w-full gradient-to-b from-black to-slate-600 flex flex-col justify-center items-center"
       style={{
         backgroundImage: "url(/Assets/Images/Rinjani-Mointain-1.jpg)",
         backgroundAttachment: "fixed",

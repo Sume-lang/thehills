@@ -1,4 +1,3 @@
-
 export default function Hero() {
   return (
     <main
@@ -12,18 +11,18 @@ export default function Hero() {
       }}
     >
       <section className="w-full p-4 h-screen bg-gray-400 bg-opacity-50 flex items-center justify-center">
-        <div className="lg:p-20 lg:w-1/2 w-full">
+        <div className="lg:p-20 lg:w-1/2 w-full flex flex-col justify-center items-center">
           <h1 className="lg:text-7xl text-2xl font-extrabold text-slate-50 uppercase">
             Welcome to{" "}
             <span className="text-gray-50 font-extralight">The Hills</span>
           </h1>
-          <h1 className="lg:w-1/2 text-4xl font-extrabold text-slate-50 uppercase bg-gray-400 bg-opacity-80 p-4 rounded-sm">
+          <h1 className="lg:w-full text-center text-4xl font-extrabold text-slate-50 uppercase bg-gray-400 bg-opacity-80 p-4 rounded-sm">
             Provide{" "}
             <span className="text-gray-50 font-extralight">
               Unlimited Services
             </span>
           </h1>
-          <p className="lg:text-3xl font-extralight text-slate-50">
+          <p className="lg:text-3xl text-center font-extralight text-slate-50">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
             quibusdam aspernatur iusto quia dolorum adipisci sunt officia
             consequuntur exercitationem eos temporibus sit ipsa alias molestias

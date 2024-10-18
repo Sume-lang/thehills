@@ -45,7 +45,7 @@ export default function Navigation({
             {menu.map((item) => (
               <div key={item.name} className="relative">
                 <button
-                  className="font-semibold hover:text-gray-300 transition-colors duration-300 ease-soft-spring"
+                  className="font-semibold hover:text-gray-50 transition-colors duration-300 ease-soft-spring"
                   onClick={() =>
                     setOpenMenu(openMenu === item.name ? null : item.name)
                   }
