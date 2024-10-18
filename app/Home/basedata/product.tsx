@@ -91,8 +91,7 @@ const Accomodations = () => {
       <section className="w-full bg-slate-400 bg-opacity-70 p-10">
         <h1 className="text-7xl font-extrabold text-slate-600 uppercase">
           Our{" "}
-          <span className="text-slate-600 font-extralight">Accomodations</span>
-        </h1>
+          <span className="text-slate-600 font-extralight">Accomodations</span> </h1>
         <p className="font-extralight text-2xl text-slate-50">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
           consequuntur maiores enim reprehenderit itaque maxime hic qui porro at

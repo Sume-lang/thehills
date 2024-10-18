@@ -11,8 +11,7 @@ const handleToggle = (
   setState((prev) => (prev === id ? 0 : id));
 };
 
-export default function Services() {
-  const [activeId, setActiveId] = useState(0);
+export default function Services() { const [activeId, setActiveId] = useState(0);
   return (
     <motion.main className="flex flex-row items-start justify-start p-10">
       <section className="w-1/2 flex flex-col justify-start items-start">
