@@ -31,6 +31,7 @@ const detailsServices = [
         price: 100000,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         link: "/services/service1",
+        img: "./Assets/Images/Rinjani-Mointain-2.jpg",
       },
       {
         id: 2,
@@ -38,6 +39,7 @@ const detailsServices = [
         price: 100000,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         link: "/services/service1",
+        img: "./Assets/Images/Rinjani-Mointain-2.jpg",
       },
       {
         id: 3,
@@ -45,6 +47,7 @@ const detailsServices = [
         price: 100000,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         link: "/services/service1",
+        img: "./Assets/Images/Rinjani-Mointain-2.jpg",
       },
       {
         id: 4,
@@ -52,6 +55,7 @@ const detailsServices = [
         price: 100000,
         description: "Lorem ipsum dolar sit amet consectetur adipisicing elit.",
         link: "/services/service1",
+        img: "./Assets/Images/Rinjani-Mointain-2.jpg",
       },
       {
         id: 5,
@@ -59,6 +63,7 @@ const detailsServices = [
         price: 100000,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         link: "/services/service1",
+        img: "./Assets/Images/Rinjani-Mointain-2.jpg",
       },
       {
         id: 6,
@@ -66,6 +71,7 @@ const detailsServices = [
         price: 100000,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         link: "/services/service1",
+        img: "./Assets/Images/Rinjani-Mointain-2.jpg",
       },
       {
         id: 7,
@@ -73,6 +79,7 @@ const detailsServices = [
         price: 100000,
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         link: "/services/service1",
+        img: "./Assets/Images/Rinjani-Mointain-2.jpg",
       },
     ],
     Accomodations: [

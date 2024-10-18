@@ -10,9 +10,6 @@ export default function Page() {
       <section>
         <Services />
       </section>
-      <section>
-        <Features />
-      </section>
     </main>
   );
 }
