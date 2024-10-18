@@ -12,7 +12,7 @@
     "workbench.colorCustomizations": {
         "inlineparameters.annotationsBackground": "#282AE00",
         "inlineparameters.annotationsForeground": "#7B82AF",
-        "scrollbar.shadow": "#24292E00",
+        "scrollbar.shadow": "#24292E00"
     },
     "window.openFoldersInNewWindow": "on",
     "window.newWindowDimensions": "fullscreen",
@@ -65,6 +65,6 @@
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.cursorBlinking": true,
     "explorer.confirmDragAndDrop": false,
-    "Prettier-SQL.ignoreTabSettings": true,
+    "Prettier-SQL.ignoreTabSettings": true
     // "window.commandCenter": false
 }
