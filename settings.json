@@ -54,6 +54,8 @@
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
+    "problems.showPanel": false,
+    "problems.showCurrentInPanelTitle": false,
     "vsicons.dontShowNewVersionMessage": true,
     "breadcrumbs.enabled": false,
     "breadcrumbs.filePath": "off",

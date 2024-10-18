@@ -1,7 +1,4 @@
 "use clint";
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { dataDetails } from "../datastores/productdetails/productdetails";
 
 export default function Services() {
   return (
@@ -23,25 +20,7 @@ export default function Services() {
           quae vel laborum.
         </p>
       </section>
-      <section className="w-full flex flex-row justify-center items-center">
-        {dataDetails.map((i) => (
-          <motion.div
-            key={i.id}
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            className="w-1/2 p-1"
-          >
-            {i.component && typeof i.component === "string" ? (
-              i.component
-            ) : (
-              <div className="w-full flex items-start justify-center border border-slate-600 h-screen">
-                {i.component}
-              </div>
-            )}
-          </motion.div>
-        ))}
-      </section>
+      <section className="w-full flex flex-row justify-center items-center"></section>
     </main>
   );
 }
