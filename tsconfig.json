@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
+    "target": "ES2017",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "allowSyntheticDefaultImports": true,
+    "composite": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
     "skipLibCheck": true,
@@ -18,11 +19,6 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
     "paths": {
       "@/*": [
         "./*"
@@ -32,12 +28,7 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts",
-    "app/(pages)/Home/api/products/route.js",
-    "app/weblearningsets/api/user/route.tsx",
-    "app/(Home)/basedata/productData/productlist.js",
-    "app/(Home)/sections/sections.js"
+    "**/*.tsx"
   ],
   "exclude": [
     "node_modules"
