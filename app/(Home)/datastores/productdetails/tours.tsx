@@ -2,7 +2,7 @@ export default function Tours() {
   return (
     <main>
       <section className="w-full flex flex-col items-center">
-        <h1 className="text-3xl font-bold py-5">Tours</h1>
+        <h1 className="text-3xl font-bold py-5">Tours And Travels</h1>
         <p className="text-2xl w-full text-center py-5">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, vitae
           quidem tempora laboriosam odit provident veritatis voluptatem quae

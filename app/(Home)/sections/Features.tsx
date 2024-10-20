@@ -30,7 +30,7 @@ export default function Features() {
         {dataFeatures.map((data) => (
           <div
             key={data.id}
-            className="w-1/3 flex flex-col items-center justify-center border-2 border-gray-900 p-10"
+            className="w-1/3 flex flex-col items-center justify-center  p-10"
           >
             <Img src={data.img} width={150} height={150} alt={data.name} />
             <div>{data.content}</div>

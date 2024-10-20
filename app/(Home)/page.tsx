@@ -1,5 +1,5 @@
 "use client";
-import { Hero, Features } from "./sections/sections";
+import { Hero,Services } from "./sections/sections";
 import React from "react";
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
         <Hero />
       </section>
       <section>
-        <Features />
+        <Services />
       </section>
     </main>
   );
