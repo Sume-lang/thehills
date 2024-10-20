@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Navigationsmenu from "../../datastores/navigationsmenu";
+import Img from "next/image";
 
 export default function Navigation({
   menu = Navigationsmenu,
@@ -36,9 +37,15 @@ export default function Navigation({
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-full">
-          <div className="flex items-center">
+          <div className="flex items-start">
             <Link href="/" className="text-3xl font-extrabold uppercase">
-              LOGO
+              <Img
+                src="/threepluswhite.png"
+                alt="logo"
+                width={210}
+                height={210}
+                priority
+              />
             </Link>
           </div>
           <div className="hidden md:flex gap-20 items-center">

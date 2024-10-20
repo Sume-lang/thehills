@@ -1,15 +1,15 @@
 export default function Tours() {
   return (
-    <main
-      className="filter brightness-50 w-full gradient-to-b from-black to-slate-600 flex flex-col justify-center items-center"
-      style={{
-        backgroundImage: "url(/Assets/Images/Rinjani-Mointain-1.jpg)",
-        backgroundAttachment: "fixed",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <h1 className="text-3xl font-bold">Tour And Travels</h1>
+    <main>
+      <section className="w-full flex flex-col items-center">
+        <h1 className="text-3xl font-bold py-5">Tours</h1>
+        <p className="text-2xl w-full text-center py-5">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, vitae
+          quidem tempora laboriosam odit provident veritatis voluptatem quae
+          eveniet illum aliquam deserunt eos sit dolorem, tempore corrupti
+          maiores dolorum cum!
+        </p>
+      </section>
     </main>
   );
 }
